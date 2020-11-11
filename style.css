@@ -1,0 +1,285 @@
+*{
+    box-sizing:border-box;
+}
+html body{
+    margin:0px;
+    padding:0px;
+}
+#wrapper{
+    display:grid;
+    grid-template-columns: repeat(1,auto);
+    grid-template-rows:repeat(6,auto);
+    
+}
+#navbar{
+    grid-column:1/-1;
+    grid-row:1/3;
+    /* background-color:rgba(5, 5, 27, 0.664); */
+    background-image:linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    position:fixed;
+    width:100%;
+}
+#logo{
+    display:inline-block;
+    margin:20px 25px;
+    border-radius: 50%;
+    width:20%;
+
+}
+.nav-link{
+    display:flex;
+    float:right;
+    list-style:none;
+    margin-right:250px;
+    padding-left:5px;
+    z-index: 10;
+    
+}
+.nav-link>li>a{
+    text-decoration:none;
+    padding:30px;
+    font-size:30px;
+    margin:0px 100px;
+    color:whitesmoke;
+   
+}
+.nav-link>li>a:hover{
+    color:rgba(153, 153, 204, 0.5);
+    transition:all 0s ease 0s;
+}
+
+#welcome-section{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    height:100vh;
+    background-color:#000;
+    /* background-image:linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
+    background-image:url('https://markaylatimer.com/wp-content/uploads/2016/06/grey-website-background-illusionapparel2.jpg');
+    
+    background-size: contain;
+}
+.welcome-head{
+    display:flex;
+    margin-right:10px;
+    margin-left:20px;
+    font-size:74px;
+    color:rgb(245, 245, 245);
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.welcome-para{
+    display:flex;
+    margin:0 50px;
+    font-size:34px;
+    font-weight: 600;
+    color:rgba(43, 36, 4, 0.788);
+    font-family:cursive;
+}
+.profile-btn{
+    font-size:24px;
+    background-color:rgba(95, 85, 67, 0.582);
+    width:100px;
+    border-radius:15% 5%;
+    color:rgb(219, 205, 205);
+    box-shadow:3px 3px 3px 3px #2b3949;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 7em;
+    padding:5px;
+    cursor: zoom-in;
+    margin-top:15px;
+}
+
+.profile-btn:hover{
+    background-color:rgba(41, 41, 104, 0.5);
+    transition:all 0s ease 0s;
+}
+
+#projects{
+        display: grid;
+        grid-template-columns:repeat(3,auto);
+        grid-auto-rows:minmax(2fr,auto);
+        grid-gap: 6rem;
+        align-items:center;
+        justify-content: center;
+        height:100vh !important;
+        /* background-image: -webkit-linear-gradient(62deg, #3a3d40 15%, #181719 100%);  */
+       /* background-color:  rgba(15, 34, 51, 0.8); */
+        background-color:rgb(75, 70, 70); 
+    /* display:grid;
+    grid-template-columns: repeat(3, 500px);
+    grid-template-rows: minmax(200px,auto);
+    align-items:center;
+    justify-content:center;
+    background-color:rgba(35, 36, 99, 0.658);
+    grid-gap:2em; */
+    border:3px solid black;
+}
+#projects>div{
+    display:flex;
+    overflow: hidden;
+}
+.project-header{
+    display:grid;
+    grid-column:1/-1;
+    font-size:45px;
+    color:rgb(245, 245, 245);
+    /* background-color:rgba(64, 64, 65, 0.8); */
+    align-self: center;
+    justify-content: center;
+    margin-bottom:-55px;
+    text-decoration:underline;
+    font-family: cursive;
+}
+
+.project-box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    justify-self: center;
+    /* border:2px solid rgb(37, 13, 13); */
+    margin-top:-50px;
+    flex-wrap: wrap;
+}
+
+.project-box>h1{
+    display:flex;
+    background-color:rgb(87, 46, 46,.5);
+    margin:0px auto;
+    width:100%;
+    justify-content: center;
+    padding:10px;
+    color:whitesmoke;
+    cursor: pointer;
+}
+
+.project-box>h1:hover{
+    background:rgb(92, 58, 92,0.5);
+    transform:all 0s ease 0s;
+    text-decoration-line: underline;
+}
+.project-box>h3{
+    display:flex;
+    background-color:rgb(51, 26, 26);
+    margin:0px auto;
+    width:100%;
+    justify-content: center;
+    padding:10px;
+    color:whitesmoke;
+    cursor: pointer;
+}
+.project-box>h3:hover{
+    background:rgba(90, 42, 90, 0.5);
+    transform:all 0s ease 0s;
+    text-decoration-line: underline;
+}
+.project-box>img{
+    width:350px;
+    padding:0 1em;
+}
+.view-btn{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-size:24px;
+    background-color:rgba(95, 85, 67, 0.582);
+    width:100px;
+    border-radius:15% 5%;
+    color:rgb(219, 205, 205);
+    box-shadow:3px 3px 3px 3px #2b3949;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* margin-left:30em; */
+    margin:0 auto;
+    padding:5px;
+    cursor: zoom-in;
+
+}
+
+.view-btn:hover{
+    background-color:rgba(41, 41, 104, 0.5);
+    transition:all 0s ease 0s;
+}
+#profile-link{
+    display:flex;
+    background-color:rgb(117, 110, 26);
+    flex-wrap:wrap;
+    margin-top:0px;
+    align-items:center;
+    justify-items:center;
+    height:100vh;
+
+}
+.connect-header{
+    display:flex;
+    color:whitesmoke;
+    font-size:45px;
+    justify-content: center;
+    align-items:center;
+    font-family: cursive;
+    margin-top:-20px;
+}
+#social{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin:0 auto;
+    flex-direction:column;
+    padding:10px 30px;
+    overflow: hidden;
+   
+}
+
+.social-link{
+    display:flex;
+    flex-direction: row;
+    list-style:none;
+    z-index: 10;
+    padding:0 50px;
+}
+.social-link>li>a{
+    display:flex;
+    text-decoration:none;
+    padding:auto;
+    font-size:30px;
+    padding:50px 50px;
+    color:whitesmoke;
+    -ms-transform-origin-x: 1vmin;
+    -ms-transform-origin-y: 2%;
+}
+.social-link>li>a:hover{
+    color:rgba(33, 33, 153, 0.5);
+    transition:all 0s ease 0s;
+    
+}
+#footer{
+    display:flex;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.8);
+}
+.footer-link{
+    display:flex;
+    align-items:center;
+   
+    list-style:none;
+    margin-right:250px;
+    z-index: 10;
+    
+}
+.footer-link>li>a{
+    justify-content: center;
+    text-decoration:none;
+    padding:auto;
+    font-size:30px;
+    margin:0px 100px;
+    color:rgb(255, 255, 255);
+   
+}
+.footer-link>li>a:hover{
+    color:rgba(247, 247, 247, 0.8);
+    transition:all 0s ease 0s;
+    
+}
