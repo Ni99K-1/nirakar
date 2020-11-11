@@ -19,7 +19,7 @@ const subtractionEl = document.querySelector('.subtraction');
 const decimalEl = document.querySelector('.decimal');//watch this line..it might create bug later
 //within bracket is grabbing on css side
 const number0El = document.querySelector('.number-0');
-const number1lEl = document.querySelector('.number-1');
+const number1El = document.querySelector('.number-1');
 const number2El = document.querySelector('.number-2');
 const number3El = document.querySelector('.number-3');
 const number4El = document.querySelector('.number-4');
@@ -33,7 +33,7 @@ const number9El = document.querySelector('.number-9');
 //lets put them in array
 
 const numberElArray =[
-    number0El, number1lEl, number2El, number3El, number4El,
+    number0El, number1El, number2El, number3El, number4El,
     number5El, number6El, number7El, number8El, number9El
 ];
 
